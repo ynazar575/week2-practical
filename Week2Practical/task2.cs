@@ -10,7 +10,7 @@ namespace Week2Practical
     {
         public static void CountString()
         {
-            Boolean upperCase = false;
+            Boolean upperCase = true;
             Console.WriteLine("enter string");
             string str = Console.ReadLine();
             str = str.Trim();
@@ -18,9 +18,9 @@ namespace Week2Practical
             for (int i = 0; i < strWords.Length; i++)
             {
 
-                if (Char.IsUpper(strWords[i][0]) == true)
+                if (Char.IsUpper(strWords[i][0]) != true)
                 {
-                    upperCase = true;
+                    upperCase = false;
                 }
             }
             if (upperCase == true)
@@ -31,7 +31,7 @@ namespace Week2Practical
             }
             else
             {
-                Console.WriteLine("enter sentence with every letter starting uppercase");
+                Console.WriteLine("enter sentence with every word starting uppercase");
             }
 
         }

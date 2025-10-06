@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
 
-            task2.CountString();
+            task3.Encrypt();
                 
 
             
