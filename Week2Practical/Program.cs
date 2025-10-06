@@ -4,7 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            task2.CountString();
+                
+
+            
+
         }
     }
 }
