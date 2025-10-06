@@ -54,5 +54,37 @@ namespace Week2Practical
             Console.WriteLine("the sentence you entered is " + input);
             Console.WriteLine("the encrypted sentence is " + new string(inputs));
         }
+
+        public static void printMenu()
+        {
+            Console.WriteLine("Please enter a valid option from below \n 1. Encrypt Text \n 2. Decrypt Text \n 0. exit application");
+            int option = 0;
+            try
+            {
+                Console.WriteLine("enter choice");
+                option = Int32.Parse(Console.ReadLine());
+               
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            switch (option)
+            {
+                case 0:
+                    Environment.Exit(0);
+                    break;
+                case 1:
+                    Encrypt();
+                    break;
+                case 2:
+                    decrypt();
+                    break;
+                
+            }
+
+        }
+
     }
 }
