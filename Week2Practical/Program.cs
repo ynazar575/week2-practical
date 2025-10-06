@@ -4,11 +4,14 @@
     {
         static void Main(string[] args)
         {
-
-            task3.Encrypt();
-                
-
+            double radius;
+            Console.WriteLine("enter a radius");
+            radius = double.Parse(Console.ReadLine());
             
+            Console.WriteLine("area of circle is " + Task4.CircleArea(radius));
+
+
+
 
         }
     }
